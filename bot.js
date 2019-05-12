@@ -13,6 +13,27 @@ client.on('ready', () => {
 
 client.on('message', async message => {
 
+    if (message.content == "!humanshit") {
+        if(message.author.bot) return;
+        
+        const embe = new Discord.RichEmbed()
+        .setTitle("Human shit pile")
+        .setDescription("here's where paige lists us in tier lists like fucking animals")
+        .setAuthor("by paige, the human sadist")
+        .setThumbnail("https://i.imgur.com/IBDi02f.jpg")
+        .addField("THE S TIER", "TOM, JOE")
+        .addField("THE A TIER", "PAUL (actual garbage)")
+        .addField("THE B TIER", "ASAD")
+        .addField("THE C TIER", "Paul gay bot")
+        .addField("THE D TIER", "lol d, no ones here")
+        .addField("THE E TIER", "JP")
+        .addField("THE F TIER", "idk why paul isnt here")
+        .setFooter("Please direct all complaints to ThePaggyShow © 2019");
+        
+        message.channel.send({embed});
+        
+    }
+    
     if (message.content.toLowerCase().includes('pp')) {
         if(message.author.bot) return;
         
