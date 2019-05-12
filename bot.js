@@ -13,13 +13,21 @@ client.on('ready', () => {
 
 client.on('message', async message => {
 
+    if (message.content.toLowerCase().includes('pp')) {
+        if(message.author.bot) return;
+        
+        stats["pp"] += 1;
+        
+    }
+    
     if (message.content == "!ppbigstats") {
         if(message.author.bot) return;
         
         const embed = new Discord.RichEmbed()
         .setTitle('Big PP Stats')
         .setColor('#800080')
-        .addField("Amount *big* has been mentioned", stats["paulAmount"]);
+        .addField("Amount *big* has been mentioned", stats["paulAmount"])
+        .addField("Amount *pp* has been mentioned", stats["pp"]);
         
         message.channel.send({embed});
     }
