@@ -13,15 +13,14 @@ client.on('ready', () => {
 
 client.on('message', async message => {
 
-    if (message.content.toLowerCase().includes('paul')) {
+    if (message.content.toLowerCase().includes('big')) {
 
        if(message.author.bot) return;
         
         const embed = new Discord.RichEmbed()
-        .setTitle('Paul is fucking gay')
+        .setTitle('I was just looking')
         .setColor("#FF0000")
-        .setDescription('dont deny it.')
-        .setImage("https://i.imgur.com/uL6IFOW.jpg");
+        .setDescription(';)')
         message.channel.send({embed});
 
        }
