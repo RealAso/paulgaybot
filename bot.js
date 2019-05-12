@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
-
 const client = new Discord.Client();
-
+let stats = require("./paulstats.json")
 
 
 client.on('ready', () => {
@@ -18,6 +17,7 @@ client.on('message', async message => {
 
        if(message.author.bot) return;
         message.reply('PauL is fucking gay');
+        stats["paulAmount"] += 1;
 
        }
 
