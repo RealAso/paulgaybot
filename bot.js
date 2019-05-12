@@ -14,7 +14,7 @@ client.on('ready', () => {
 
 client.on('message', async message => {
 
-    if (message.content.includes('paul')) {
+    if (message.content.toLowerCase().includes('paul')) {
 
        message.reply('PauL is fucking gay');
 
