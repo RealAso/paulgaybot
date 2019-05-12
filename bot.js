@@ -16,7 +16,7 @@ client.on('message', async message => {
     if (message.content == "!humanshit") {
         if(message.author.bot) return;
         
-        const embe = new Discord.RichEmbed()
+        const embed = new Discord.RichEmbed()
         .setTitle("Human shit pile")
         .setDescription("here's where paige lists us in tier lists like fucking animals")
         .setAuthor("by paige, the human sadist")
