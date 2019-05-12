@@ -12,7 +12,7 @@ client.on('ready', () => {
 
  
 
-client.on('message', message => {
+client.on('message', async message => {
 
     if (message.content.includes('paul')) {
 
