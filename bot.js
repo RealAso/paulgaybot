@@ -13,6 +13,26 @@ client.on('ready', () => {
 
 client.on('message', async message => {
 
+    if (message.content == "!gallary") {
+        if(message.author.bot) return;
+        
+        const embed = new Discord.RichEmbed()
+        .setTitle("shit we say")
+        .setDescription("heres the garbage the retards here say sometimes")
+        .setThumbnail("https://i.imgur.com/nwt89y0.jpg")
+        .addField("im crying *sniff* because.. *sniff* ..i dont have to do homework.. *sniff* ..and i can do more typing club", "- paige")
+        .addField("wait i thought we were just looking", "- joe")
+        .addField("i dont want to do typing club anymore", "- paige")
+        .addField("...that just shows how depressed you are, you little potato", "- asad")
+        .addField("...i like you a little bit...", "- joe")
+        .addField("thats my girl- uh i mean thats my friend", "- joe")
+        .addField("genji? more like n word!", "- tom")
+        .setColor("#800080")
+        .setFooter("idk");
+        
+        message.channel.send({embed});
+    }
+    
     if (message.content == "!humanshit") {
         if(message.author.bot) return;
         
