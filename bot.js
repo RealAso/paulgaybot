@@ -16,10 +16,13 @@ client.on('message', async message => {
     if (message.content.toLowerCase().includes('paul')) {
 
        if(message.author.bot) return;
-        message.reply('PauL is fucking gay');
-        message.reply(stats["paulAmount"]);
-        message.reply("lol");
-        stats["paulAmount"] = stats["paulAmount"] + 1
+        
+        const embed = new Discord.RichEmbed()
+        .setTitle('Paul is fucking gay')
+        .setColor("#FF0000")
+        .setDescription('dont deny it.')
+        .setImage(server.iconURL);
+        message.channel.send({embed});
 
        }
 
