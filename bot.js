@@ -18,6 +18,8 @@ client.on('message', async message => {
        if(message.author.bot) return;
         message.reply('PauL is fucking gay');
         message.reply(stats["paulAmount"]);
+        message.reply("lol");
+        stats["paulAmount"] = stats["paulAmount"] + 1
 
        }
 
