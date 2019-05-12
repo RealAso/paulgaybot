@@ -29,7 +29,7 @@ client.on('message', async message => {
        if(message.author.bot) return;
         
         const embed = new Discord.RichEmbed()
-        .setTitle('I was just looking')
+        .setTitle('I thought we were just looking')
         .setColor("#FF0000")
         .setDescription(';)')
         message.channel.send({embed});
