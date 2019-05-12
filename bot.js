@@ -34,7 +34,7 @@ client.on('message', async message => {
         .setDescription(';)')
         message.channel.send({embed});
         
-        stats["paulAmount] += 1;
+        stats["paulAmount"] += 1;
 
        }
     
