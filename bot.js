@@ -13,6 +13,17 @@ client.on('ready', () => {
 
 client.on('message', async message => {
 
+    if (message.content == "!ppbigstats") {
+        if(message.author.bot) return;
+        
+        const embed = new Discord.RichEmbed()
+        .setTitle('Big PP Stats')
+        .setColor('#800080')
+        .addField("Amount *big* has been mentioned", stats["paulAmount"]);
+        
+        message.channel.send({embed});
+    }
+    
     if (message.content.toLowerCase().includes('big')) {
 
        if(message.author.bot) return;
@@ -22,8 +33,11 @@ client.on('message', async message => {
         .setColor("#FF0000")
         .setDescription(';)')
         message.channel.send({embed});
+        
+        stats["paulAmount] += 1;
 
        }
+    
 
 });
 
