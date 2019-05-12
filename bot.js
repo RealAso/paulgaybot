@@ -21,7 +21,7 @@ client.on('message', async message => {
         .setTitle('Paul is fucking gay')
         .setColor("#FF0000")
         .setDescription('dont deny it.')
-        .setImage(message.guild.iconURL);
+        .setImage("https://i.imgur.com/uL6IFOW.jpg");
         message.channel.send({embed});
 
        }
