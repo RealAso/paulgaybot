@@ -16,7 +16,7 @@ client.on('message', async message => {
 
     if (message.content.includes('paul')) {
 
-       message.reply('p a u l is fucking gay');
+       message.reply('PauL is fucking gay');
 
        }
 
