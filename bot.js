@@ -28,7 +28,9 @@ client.on('message', async message => {
         .addField("THE D TIER", "lol d, no ones here")
         .addField("THE E TIER", "JP")
         .addField("THE F TIER", "idk why paul isnt here")
+        .setColor("#800080")
         .setFooter("Please direct all complaints to ThePaggyShow © 2019");
+        
         
         message.channel.send({embed});
         
