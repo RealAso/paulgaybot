@@ -61,7 +61,7 @@ client.on('message', async message => {
     if (message.content.toLowerCase().includes('nice')) {
         if(message.author.bot) return;
         
-        onst embed = new Discord.RichEmbed()
+        const embed = new Discord.RichEmbed()
         .setTitle('lol 69')
         .setColor("#FF0000")
         .setDescription('( ͡° ͜ʖ ͡°)')
