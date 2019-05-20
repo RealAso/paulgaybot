@@ -26,6 +26,7 @@ client.on('message', async message => {
         .addField("...that just shows how depressed you are, you little potato", "- asad")
         .addField("...i like you a little bit...", "- joe")
         .addField("thats my girl- uh i mean thats my friend", "- joe")
+        .addField("are you fucking sorry?", "-asad")
         .addField("genji? more like n word!", "- tom")
         .setColor("#800080")
         .setFooter("idk");
@@ -41,6 +42,7 @@ client.on('message', async message => {
         .setDescription("here's where paige lists us in tier lists like fucking animals")
         .setAuthor("by paige, the human sadist")
         .setThumbnail("https://i.imgur.com/IBDi02f.jpg")
+        .addField("TRIPLE S", "Lil stamina")
         .addField("THE S TIER", "TOM, JOE")
         .addField("THE A TIER", "PAUL (actual garbage)")
         .addField("THE B TIER", "ASAD")
@@ -56,8 +58,14 @@ client.on('message', async message => {
         
     }
     
-    if (message.content.toLowerCase().includes('pp')) {
+    if (message.content.toLowerCase().includes('nice')) {
         if(message.author.bot) return;
+        
+        onst embed = new Discord.RichEmbed()
+        .setTitle('lol 69')
+        .setColor("#FF0000")
+        .setDescription('( ͡° ͜ʖ ͡°)')
+        message.channel.send({embed});
         
         stats["pp"] += 1;
         
@@ -70,7 +78,7 @@ client.on('message', async message => {
         .setTitle('Big PP Stats')
         .setColor('#800080')
         .addField("Amount *big* has been mentioned", stats["paulAmount"])
-        .addField("Amount *pp* has been mentioned", stats["pp"]);
+        .addField("lol 69", stats["pp"]);
         
         message.channel.send({embed});
     }
