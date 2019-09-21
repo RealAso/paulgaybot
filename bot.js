@@ -19,7 +19,7 @@ client.on('message', async message => {
        if(message.author.bot) return;
         
         const embed = new Discord.RichEmbed()
-        .setTitle('conner can go eat a dick')
+        .setTitle('connor can go eat a dick')
         .setColor("#FF0000")
         message.channel.send({embed});
         
@@ -30,7 +30,7 @@ client.on('message', async message => {
        if(message.author.bot) return;
         
         const embed = new Discord.RichEmbed()
-        .setTitle('conner can go eat a dick')
+        .setTitle('connor can go eat a dick')
         .setColor("#FF0000")
         message.channel.send({embed});
         
@@ -42,7 +42,7 @@ client.on('message', async message => {
        if(message.author.bot) return;
         
         const embed = new Discord.RichEmbed()
-        .setTitle('conner can go eat a dick')
+        .setTitle('connor can go eat a dick')
         .setColor("#FF0000")
         message.channel.send({embed});
         
@@ -54,7 +54,7 @@ client.on('message', async message => {
        if(message.author.bot) return;
         
         const embed = new Discord.RichEmbed()
-        .setTitle('conner can go eat a dick')
+        .setTitle('connor can go eat a dick')
         .setColor("#FF0000")
         message.channel.send({embed});
         
