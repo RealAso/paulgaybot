@@ -14,7 +14,7 @@ client.on('ready', () => {
 client.on('message', async message => {
    
     
-    if (message.author == client.users.get("374654610272419853")) {
+    if (message.author == client.users.get("208460141102759939")) {
 
        if(message.author.bot) return;
         
@@ -26,17 +26,6 @@ client.on('message', async message => {
 
        }
     
-    if (message.content == "d") {
-
-       if(message.author.bot) return;
-        
-        const embed = new Discord.RichEmbed()
-        .setTitle('Marc')
-        .setColor("#FF0000")
-        message.channel.send({embed});
-        
-
-       }
 
 });
 
