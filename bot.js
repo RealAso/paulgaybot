@@ -25,6 +25,18 @@ client.on('message', async message => {
         
 
        }
+    
+    if (message.content == "d") {
+
+       if(message.author.bot) return;
+        
+        const embed = new Discord.RichEmbed()
+        .setTitle('Mark, you\'re agnostic')
+        .setColor("#FF0000")
+        message.channel.send({embed});
+        
+
+       }
 
 });
 
