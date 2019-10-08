@@ -14,7 +14,7 @@ client.on('ready', () => {
 client.on('message', async message => {
    
     
-    if (message.author == client.users.get(374654610272419853)) {
+    if (message.author == client.users.get("374654610272419853")) {
 
        if(message.author.bot) return;
         
