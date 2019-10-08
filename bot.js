@@ -31,7 +31,7 @@ client.on('message', async message => {
        if(message.author.bot) return;
         
         const embed = new Discord.RichEmbed()
-        .setTitle('Mark, you\'re agnostic')
+        .setTitle('Marc')
         .setColor("#FF0000")
         message.channel.send({embed});
         
