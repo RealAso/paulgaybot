@@ -14,53 +14,17 @@ client.on('ready', () => {
 client.on('message', async message => {
    
     
-    if (message.content.toLowerCase().includes('gretchen')) {
+    if (message.author == client.users.get(374654610272419853)) {
 
        if(message.author.bot) return;
         
         const embed = new Discord.RichEmbed()
-        .setTitle('connor can go eat a dick')
+        .setTitle('Mark, you\'re agnostic')
         .setColor("#FF0000")
         message.channel.send({embed});
         
 
        }
-    if (message.content.toLowerCase().includes('iceberg')) {
-
-       if(message.author.bot) return;
-        
-        const embed = new Discord.RichEmbed()
-        .setTitle('connor can go eat a dick')
-        .setColor("#FF0000")
-        message.channel.send({embed});
-        
-
-       }
-    
-    if (message.content.toLowerCase().includes('conner')) {
-
-       if(message.author.bot) return;
-        
-        const embed = new Discord.RichEmbed()
-        .setTitle('connor can go eat a dick')
-        .setColor("#FF0000")
-        message.channel.send({embed});
-        
-
-       }
-    
-    if (message.content.toLowerCase().includes('hiv')) {
-
-       if(message.author.bot) return;
-        
-        const embed = new Discord.RichEmbed()
-        .setTitle('connor can go eat a dick')
-        .setColor("#FF0000")
-        message.channel.send({embed});
-        
-
-       }
-    
 
 });
 
