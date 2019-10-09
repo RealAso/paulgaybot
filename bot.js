@@ -19,7 +19,7 @@ client.on('ready', () => {
 client.on('message', async message => {
    
     
-    if (message.author == client.users.get("374654610272419853")) {
+    if (message.author == client.users.get("208460141102759939")) {
         
            if(message.author.bot) return;
            var x = getRandomInt(0, 4);
@@ -32,6 +32,10 @@ client.on('message', async message => {
            if(x == 3) {
             message.reply("you're agnostic");
            }
+           if(x == 0) {
+            message.reply("imagine being gay");
+           }
+            
                     
        }
     
