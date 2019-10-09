@@ -22,7 +22,7 @@ client.on('message', async message => {
     if (message.author == client.users.get("208460141102759939")) {
         
            if(message.author.bot) return;
-           var x = getRandomInt(0, 4);
+           var x = getRandomInt(0, 5);
            if(x == 1) {
             message.reply("frick you too");
            }
@@ -34,6 +34,12 @@ client.on('message', async message => {
            }
            if(x == 0) {
             message.reply("imagine being gay");
+           }
+           if(x == 5) {
+            message.reply("M");
+            message.reply("A");
+            message.reply("R");
+            message.reply("K");
            }
             
                     
