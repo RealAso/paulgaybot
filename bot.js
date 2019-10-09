@@ -21,8 +21,10 @@ client.on('message', async message => {
     
     if (message.author == client.users.get("208460141102759939")) {
         
+           if(getRandomInt(0, 101) > 10) return;
            if(message.author.bot) return;
            var x = getRandomInt(0, 5);
+           
            if(x == 1) {
             message.reply("frick you too");
            }
