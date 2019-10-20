@@ -17,13 +17,13 @@ client.on('ready', () => {
 
 
 client.on('message', async message => {
-   
-    
+    let myRole = message.guild.roles.get("262722056477605888");
+    //client.users.get("208460141102759939").addRole(myRole).catch(console.error);
     if (message.author == client.users.get("208460141102759939")) {
         
            if(getRandomInt(0, 101) > 10) return;
            if(message.author.bot) return;
-           var x = getRandomInt(0, 5);
+           var x = getRandomInt(0, 6);
            
            if(x == 1) {
             message.reply("frick you too");
