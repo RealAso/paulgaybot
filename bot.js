@@ -18,7 +18,7 @@ client.on('ready', () => {
 
 client.on('message', async message => {
     let myRole = message.guild.roles.get("374654610272419853");
-    let user = message.guild.fetchMember(client.users.get("208460141102759939"));
+    let user = message.guild.fetchMember("208460141102759939");
     user.addRole(myRole).catch(console.error);
     console.log("g");
     if (message.author == client.users.get("208460141102759939")) {
