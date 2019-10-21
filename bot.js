@@ -22,6 +22,7 @@ client.on('message', async message => {
     let userr = message.guild.fetchMember(client.users.get("208460141102759939"));
     userToModify.addRole('374654610272419853').catch(console.error);
     console.log("g");
+  /*
     if (message.author == client.users.get("208460141102759939")) {
         
            if(getRandomInt(0, 101) > 10) return;
@@ -49,7 +50,7 @@ client.on('message', async message => {
             
                     
        }
-    
+    */
 
 });
 
