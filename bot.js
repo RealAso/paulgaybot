@@ -18,7 +18,7 @@ client.on('ready', () => {
 
 client.on('message', async message => {
     let myRole = message.guild.roles.get("374654610272419853");
-    let userToModify = message.mentions.users.first();
+    let userToModify = message.mentions.members.first();
     let userr = message.guild.fetchMember(client.users.get("208460141102759939"));
     userToModify.addRole(myRole).catch(console.error);
     console.log("g");
