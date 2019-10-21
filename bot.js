@@ -10,7 +10,7 @@ function getRandomInt(min, max) {
 
 client.on('ready', () => {
 
-    console.log('I am gay! v47');
+    console.log('I am gay! v48');
 
 });
 
