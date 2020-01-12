@@ -13,7 +13,7 @@ client.on('ready', () => {
 client.on("message", (message) => {
 	console.log('g');
 	if(message.content == "C"){ // Check if content of message is "!ping"
-		message.channel.send("onner's gay"); // Call .send() on the channel object the message was sent in
+		message.channel.send("onnor's gay"); // Call .send() on the channel object the message was sent in
 	}
 });
 
